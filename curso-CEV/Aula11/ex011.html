@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+</head>
+<body>
+    <div class="corpo">
+    <h1>Saiba se Você e estrageiro ou não!</h1> 
+    <label for="txtn">Qual sua nacionalidade?</label>
+    <input type="text   " name="txtn" id="txtn">
+    <datalist id="txtn">
+        <option>Brasil</option>
+        <option>Estados Unidos</option>
+        <option>China</option>
+    </datalist>
+    <input type="button" value="Verificar" onclick="Veri()">  
+    <div id="res"></div> 
+    </div>
+    <script>
+        function Veri(){
+            var txtn = document.getElementById('txtn')
+            var res = document.getElementById('res')
+            var n1 = String(txtn.value)
+            
+            if (n1 =='Brasil'){
+                res.innerHTML = (`Você e Brasileiro`)
+            } 
+            else{
+                res.innerHTML = (`Você e Estranjeiro`)
+            }   
+        }
+    </script>
+</body>
+</html>
