@@ -30,3 +30,6 @@ footer{
     text-align: center;
     font-style: italic;
 }
+img#imagem{
+    border-radius: 50%;
+}
