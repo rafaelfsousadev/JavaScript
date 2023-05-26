@@ -25,6 +25,9 @@ header{
     color: white;
     text-align: center;
 }
+h1{
+    text-shadow: 2px 2px 2px black;
+}
 
 section{ 
  background-color: white;
@@ -45,13 +48,13 @@ input[type="number"]{
     width: 60px;
     font-size: 20px;
 }
-select{
-    border: solid 3px blue;
-}
+
 select#flista{
     width: 150px;
     margin-top: 20px;
     margin-bottom: 20px;
+    border: solid 3px blue;
+    font-size: 13px;
 }
 .pai{
     position: relative;
@@ -69,6 +72,7 @@ div.cor{
 label{
     color: white;
     font-size: 20px;
+    text-shadow: 2px 2px 2px black;
 }
 input[type="button"] {
     font:bold system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,;

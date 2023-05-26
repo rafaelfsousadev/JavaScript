@@ -1,0 +1,1 @@
+var amigo = {nome:'josé', sexo:'M', peso:85.4}
