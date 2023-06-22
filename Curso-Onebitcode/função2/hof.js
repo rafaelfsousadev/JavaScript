@@ -8,6 +8,13 @@ function calcular(a,b, operacao){
 
 // ASSIM CRIANDO UMA FUNÇÃO DENTRO DA OUTRA
 
+function somar(x,y){
+    console.log('Realizando uma soma')
+    return x + y
+}
+
+calcular(3, 5, somar)
+
 function exibirElemento(elemento, indice, array){
     console.log({
         elemento,
