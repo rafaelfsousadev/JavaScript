@@ -31,8 +31,28 @@ const personagens = [
 
   //reduce
 
-  const nivelTotal = personagens.reduce(function(valorAcumulado, personagens){
+  const nivelTotal = personagens.reduce(function(valorAcumulado, personagens){ 
     return (valorAcumulado) + (personagens.nivel)
-  },0)
+  },0)// coloca qual valor o valorAcumulado incia
 
-  console.log(nivelTotal)
+  //console.log(nivelTotal)
+
+  const racas = personagens.reduce(function (valorAcumulado, personagens){
+    if (valorAcumulado[personagens.raca]){
+      valorAcumulado[personagens.raca].push(personagens)
+    }else{
+      valorAcumulado[personagens.raca] = [personagens]
+    }
+
+    return valorAcumulado
+  }, {})
+
+  //console.log(racas)
+
+  // 1, 2, 3, 4, 5, 6, 7, 8
+
+  personagens.sort(function(a,b){
+    return a.nivel - b.nivel
+  })
+
+  console.log(personagens)
