@@ -27,8 +27,23 @@ console.log(inclue) // Devolve se tem ou não o elemento no Array
 const indice = arr.indexOf('Gandalf')
 console.log(indice)// mostra em qual posição exata esta esse elemento no Array
 
-//Cortat e Concatenar
+//Cortar
 //slice
 const hobbits = arr.slice(0, 4)// ele corta o Array da posição indicada no caso do 0 ao 4 excluindo o 4 
 
 console.log(hobbits)
+
+//Concatenar
+//concat
+const sociedade = hobbits.concat(arr, 'Rafael') // Junta em um Array outas Arrays e o que mais você colocar
+console.log(sociedade)
+
+//Substituição Dos Elementos 
+// splice
+const elementosRemovidos = sociedade.splice(indice, 1, 'Força maxima') // ele remove o elemento de um Array e coloca outros no lugar 
+
+// Iterar sobre os elementos
+for (let indice = 0; indice < sociedade.length; indice++){
+    const elemento = sociedade[indice]
+    console.log(`${elemento} Se encontra na posição ${indice}`)
+}
