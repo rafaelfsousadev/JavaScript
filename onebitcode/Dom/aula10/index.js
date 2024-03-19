@@ -20,5 +20,16 @@ document.getElementById('localBtn').addEventListener('click', function(){
 })
 
 document.getElementById('readLocal').addEventListener('click', function(){
-    
+    const text = localStorage.getItem('text')
+    alert('O texto salvo no local storage é:' + t)
+})
+
+document.getElementById('cookieBtn').addEventListener('click', function(){
+    const input = document.getElementById('cookie')
+    // cookiName = value; expires = UTSStringDate; path=/;
+    const cookie = 'info=' + input.value + ';'
+    const expiration = 'expires' + new Date(2024, 21, 3) + ';'
+    const path = 'path=/;'
+    document.cookie = cookie + expiration + path
+    input.value = ''
 })
