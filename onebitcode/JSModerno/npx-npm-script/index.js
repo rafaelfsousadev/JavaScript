@@ -1,0 +1,1 @@
+const helloWordNpm = require('hello-world-npm')
