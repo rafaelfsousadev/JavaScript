@@ -1,4 +1,4 @@
-const Installmemnt = require("./installmet")
+const Installmemnt = require("./Installmet")
 
 module.exports = class Loan{
     static #fee = 1.05
